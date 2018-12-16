@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+  font-family: stackHack;
+  src: url('BebasNeueRegular.ttf');
+}
+@font-face {
+  font-family: blackDiamond;
+  src: url('BlackDiamondsPersonalUse.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.body1 {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #ED1B24;
+}
+.body1 > div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.body1 > div > div {
+  /* background-color: blue; */
+}
+.body1Row1 > div {
+  padding: 0 20px;
+  font-size: 25px;
+  color: #fff;
+  font-family: blackDiamond;
+}
+.body1Row2 > div {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.body2 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  align-items: center;
+}
+.body2 > div:first-child img {
+  width: 100%;
+  height: 80vh;
+}
+.body2 > div {
+  width: 50vw;
+}
+
+.body2Row2 > div {
+  text-align: center;
+}
+.body2Row2Row1 {
+  font-family: stackHack;
+  font-size: 35px;
+  margin: 0 0 80px 0;
+  color: #ED1B24;
+}
+.body2Row2Row2 {
+  margin: 50px 0;
+}
+.body2Row2Row2 > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+.body2Row2Row2 > div > div {
+  padding-bottom: 10px;
+}
+.body2Row2Row2 > div > div:nth-child(2) input {
+  border: 0px solid;
+  width: 250px;
+  padding-left: 8px;
+  opacity: .7;
+}
+.body2Row2Row2 > div > div:nth-child(2) label {
+  display: block;
+  /* margin-top: 30px; */
+}
+.body2Row2Row2 > div > div {
+
+  border-bottom: 1px solid #ED1B24;
+}
+
+.userNameLabel {
+  display: none;
+  margin-top: -20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #ED1B24;
+}
+.userNameLabel {
+  display: none;
+  margin-top: -20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #ED1B24;
+}
+
+.passwordLabel {
+  display: none;
+  margin-top: -20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #ED1B24;
+
+}
+.body2Row2Row3 button {
+  background-color: rgba(0,0,0,0);
+  /* padding: 12px 60px; */
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #ED1B24;
+  font-size: 17px;
+  color: #ED1B24;
+  cursor: pointer;
+  min-width: 145px;
+  min-height: 50px;
+}
+.body2Row4 {
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.body2Row4 a {
+  text-decoration: none;
+  color: #ED1B24;
+}
+.body2 button.showImage {
+  background-image: url("../images/Rolling.gif");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* .body2Row2Row2Row2Col3, .body2Row2Row2Row1Col3 {
+  color: #ED1B24;
+} */
+.fa-check-circle, .fa-exclamation-triangle, .fa-wrench, .fa-envelope {
+  opacity: .5;
+}
+.fa-exclamation-triangle {
+  color: #ED1B24;
+}
+@media (max-width: 600px) {
+  .body2 {
+    display: flex;
+    flex-flow: column wrap;
+
+  }
+  .body2 > div {
+    width: 100vw;
+  }
+  .body2 > div:nth-child(2) {
+    margin-top: 30px;
+  }
+  .body2 > div:first-child img {
+    width: 100%;
+    height: 55vh;
+  }
+  .body1Row1 > div {
+    font-size: 22px;
+  }
+  .body1Row2 > div {
+    font-size: 16px;
+    padding: 0 2vw;
+  }
+}
+@media (max-width: 300px) {
+  .body2Row2Row2 > div > div:nth-child(2) input {
+    border: 0px solid;
+    width: 200px;
+    padding-left: 8px;
+    opacity: .7;
+  }
+}
